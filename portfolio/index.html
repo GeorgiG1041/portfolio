@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <title>The Baked Cake</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <!-- fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/css.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/cycle2.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="">
+            <ul>
+                <li><a href="#1" class="tool">Home</a></li>
+                <li><a href="#2" class="tool clicks">AboutUs</a></li>
+                <li><a href="#3" class="tool">Gallery</a></li>
+                <li><a href="#4" class="tool blogs">Blog</a></li>
+                <li><a href="#5" class="tool">Contacts</a></li>
+            </ul>
+        </nav>
+        <div id="1" class="pic pic1 "><div class="logo hidden"></div></div>
+        <div class="Razer"></div>
+        <div id="2" class="info">
+            <div class="col-sm-6 text">
+                <h2 class="inform" >Who Are We</h2>
+                <p class="inform"> <br>We’ve been a staple of Market Street since 1987, where the second generation of the Cross family continues to own and operate the city’s oldest bakery. Siblings Debbie and Mark are Certified Master Bakers by the Retail Bakers of America. Working with quality ingredients and our own family recipes, our goal is to make the finest sweet treats in town. <br>
+                At The Baked Cake, we have it all- cakes and cookies, breads, pies and pastries. Stop by and grab some donuts for the office, or try one of our casseroles for a quick and easy dinner.</p>
+            </div>
+            <div class="image ">
+            </div>
+
+
+        </div>
+        <div class="Razer"></div>
+        <div id="3" class="pic pic2">
+            <div id="container">
+                <div id="slideshow" class="cycle-slideshow"
+                    data-cycle-fx = "fade"
+                    data-cycle-speed = "600"
+                    data-cycle-timeout = "3000"
+                    data-cycle-pager = "#pager"
+                    data-cycle-pager-template ="<a herf='#'><img src='{{src}}' height=100 width=150/>"
+                        data-cycle-next = "#next"
+                        data-cycle-prev = "#prev"
+                        data-cycle-manual-fx = "scrollHorz"
+                        data-cycle-manual-speed = "400"
+                        data-cycle-pager-fx = "fade">
+                        <img src="images/1.jpg" alt="">
+                        <img src="images/2.jpeg" alt="">
+                        <img src="images/3.jpg" alt="">
+                        <img src="images/4.jpg" alt="">
+                        <img src="images/5.jpg" alt="">
+                    </div>
+                    <div id="pager"></div>
+                    
+                </div>
+            </div>
+            <div class="Razer"></div>
+            <div id="4" class="blog  ">
+                <div class="fonts">
+                    <h2>Baked Goods</h2>
+                    <br>
+                    <div class="blogs col-sm-7 ">
+                        <img class="blogs1" src="images\blog1.jpg" ">
+                        <img class="blogs1" src="images\blog2.jpg">
+                        <img class="blogs1" src="images\blog3.jpg">
+                        <img class="blogs1" src="images\blog4.jpg">
+                    </div>
+                    <h3>About the baking</h3>
+                    <p class=" col-sm-offset-4"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                </div>
+            <a href="blog.html"><div class="button"></div></a>
+            </div>
+            
+            <div id="4" class="blog pic4"></div>
+            <footer id="5" class="col-sm-12">
+                <div class="fimage col-sm-5"></div>
+                <div class=" contact col-sm-5 ">
+                    <h1>Get in Touch</h1>
+                    <br>So there are lot’s of good reasons to make your own. Maybe you’ve already discovered them. So if you are serious about good bread making, Weekend Bakery is the place for you. Get your hands stuck in a piece of dough and smell the aroma of your own sourdough starter.  <br><br>Tel: 123-456-7890  |  Email: info@mysite.com<form class="form-style-4" action="" method="post">
+                        <label for="field1">
+                            <span>Enter Your Name</span><input type="text" name="field1" required="true" />
+                        </label>
+                        <label for="field2">
+                            <span>Email Address</span><input type="email" name="field2" required="true" />
+                        </label>
+                        <label for="field3">
+                            <span>Short Subject</span><input type="text" name="field3" required="true" />
+                        </label>
+                        <label for="field4">
+                            <span>Message to Us</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+                        </label>
+                        <label>
+                            <span>&nbsp;</span><input type="submit" value="Send Letter" />
+                        </label>
+                    </form></div>
+                    <div class="media"></div>
+                    
+                </footer>
+            </body>
+            <script type="text/javascript" src="js/js.js"></script>
+        </html>

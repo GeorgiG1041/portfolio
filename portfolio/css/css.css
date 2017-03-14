@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+
+  
+}
+/*NAVIGATION*/
+nav {
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10000;    
+    text-align: center;    
+    word-spacing: 100px;
+    font-size: 30px;
+    position: fixed;
+
+}
+
+nav.hidden{
+transform:translate3d(0,-100%,0);
+}
+
+nav li {
+    
+    text-align: center;
+    position: fixed;
+    margin: 0% auto;
+    list-style: none;    
+    float:left;
+    margin: 20px 27px;
+    height: 60px;
+    width: 200px;
+    line-height: 50px;
+    border-radius: 8px;   
+    font-weight: 700;
+    font-size: 45px;
+    position: relative;    
+    z-index: 1;
+    opacity: 0.8;
+    padding: 6px;
+    background-color: #cd4236;
+    
+}
+
+nav li a {
+    text-decoration: none;
+     font-family: 'Raleway', sans-serif;
+    color:#fbdb65;
+    border:none;
+     outline:none;
+     border-style: hidden;
+}
+
+nav li a:hover {
+    color:#cd4236;
+     z-index: 1000;
+     text-decoration: none;
+}
+
+nav li:before {
+    content: "" ;
+    background: #fbdb65;
+    width: 101%;
+    height: 100%;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+    z-index: -1;
+}
+
+nav li:hover:before {
+    transform: scale(0.9);
+}
+
+nav li:hover {
+    color:#a77658;
+}
+
+
+/*Home page*/
+
+
+.pic{
+    background-attachment: fixed;
+    height: 100%;    
+    background-size: cover;
+    position: relative;
+}
+
+.pic1{
+    padding-top: 120px;
+background: url("../images/cam1.jpg");
+}
+
+.logo {    
+    margin-left: 70%;
+    
+    opacity: 0.4;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/logo.jpg");
+    transition:  ease-in-out;
+    z-index: 1000;
+
+}
+
+
+/*About us*/
+
+
+.info {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    color: aliceblue;
+    text-align: center;
+    padding-left: : 10px;
+}
+
+.text {
+    margin-top: 25px;
+    background-color: white;
+    width: 40%;
+    height: 65%;    
+    color: black;
+    text-align: center;
+    position: inherit;
+    font-size: 20px;
+    border: 2px solid #888888;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+.inform {
+     display:none;
+}
+
+.text h2 {
+    
+    
+    font-family: arial;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+   
+    text-transform: uppercase;
+    background: url("../images/Rainbow.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image {
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-left: 60%;
+    margin-top: 20px;
+    padding:  20px;
+    background-size: cover;
+    width: 520px;
+    height: 500px;
+    background-image: url("../images/kid2.jpg");
+    box-shadow: 8px 8px 5px #888888;
+}
+/*Razer*/
+.Razer{
+border-radius: 5px; 
+height: 160px;
+width: 100%;
+position: relative;
+background-color:crimson;
+}
+
+.Razer::after {
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: skewY(5deg);
+    transform-origin: top right;
+}
+
+/*Slider Gallery*/
+
+
+#container {
+        width: 100%;
+        height: 704px;
+        overflow: hidden;
+        background: #ff00ff;
+    }
+    #slideshow {
+        height: 100%;
+        width: 100%;
+    }
+    #slideshow img {
+        height: 100%;
+        width: 100%;
+    }
+    #pager {
+        text-align: center;
+        height: 120px;
+        width: 100%;
+        position: absolute;
+        bottom: 5%;
+        background: rgba(0,0,0,.5);
+        z-index: 1000;
+        opacity: 0;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    #pager:hover {
+       opacity: 1;
+    }    
+    
+    #prev {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left:0;
+        margin: auto 10px;
+        z-index: 1000;
+    }
+     #next {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right:0;
+        margin: auto 10px;
+      z-index: 1000;
+    }
+    
+    #pager img {
+        margin: 10px 5px;
+        opacity:0.3;
+        transition:all .3s ease-in-out 0s;
+        }
+    #pager img:hover {
+        opacity:1;
+        transform:scale(1.05);
+        z-index:100;
+        }
+
+/*Blog*/
+
+.blog {
+    background-attachment: fixed;
+    height: 100%
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 20px 100px;
+    display: inline-block;
+}
+
+.blog h2 {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin: 10% auto;
+}
+
+.blog h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.blog p {
+   margin-right: 20px;
+   font-size: 20px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 300;
+}
+
+.blogs1 {
+    box-shadow: 8px 8px 5px #888888;
+height: 250px;
+width: 250px; ;
+position: relative;
+margin: 10px ;
+border-radius: 8px;
+transition: all .3s ease-in-out;
+
+}
+
+.blogs1:hover {
+    opacity: 0.7;
+    transition: all .3s ease-in-out;    
+}
+
+.fonts{
+    background-color: #dcc6ad;
+    border: 1px solid #dcc6ad;
+    border-radius: 8px;
+    height: 900px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.information {
+    background: blue;
+}
+
+
+.button {
+  width: 290px;
+  height: 100px;
+  background-color: tomato;
+  position: absolute;
+  left: 75%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #fff;
+}
+
+.button:after, .button:before {
+  content: 'For Full Review';
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: all 0.3s;
+  transform: translate(-50%, -50%);
+}
+
+.button:hover:after {
+  top: -50%;
+}
+
+.button:before {
+font-family: 'Raleway', sans-serif;  
+  content: 'Click Here';
+  font-size: 25px;
+  top: 190%;
+}
+
+.button:hover:before {
+  top: 50%;
+}
+
+.pic3{
+background-color: white;
+}
+
+.pic4{
+background-color: white;
+}
+
+/*footer*/
+
+footer {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #93d6c3;
+}
+
+footer .fimage {
+
+    border: 3px solid white;
+    border-radius: 10px;    
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    background-image: url("../images/nom.jpg");
+    box-shadow: 8px 8px 5px #888888;
+}
+
+footer .contact {
+font-family: 'Raleway', sans-serif;
+    margin-left: 100px;
+    width: 50%;    
+    top: 0;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.form-style-4{
+    width: 450px;
+    font-size: 16px;
+    background: #93d6c3;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #93d6c3;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: black;
+
+}
+
+.form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+}
+
+.form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+.form-style-4 input[type=text],
+.form-style-4 input[type=email] 
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #600;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+
+.form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #600;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form-style-4 textarea:focus, 
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+    background: #93d6c3;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: black;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+background: #a77658;
+}
